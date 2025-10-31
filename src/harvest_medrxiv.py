@@ -348,13 +348,21 @@ def main():
     # Ensure logs directory exists
     Path('logs').mkdir(exist_ok=True)
     
+    # Read configuration from environment variables (for GitHub Actions)
+    keyword = os.getenv('SEARCH_KEYWORD', 'artificial intelligence')
+    days = int(os.getenv('DAYS_BACK', '30'))
+    
+    logger.info(f"Starting harvest with keyword='{keyword}', days={days}")
+    
     try:
-        harvester = MedRxivHarvester()
+        harvester = MedRxivHarvester(keyword=keyword, days=days)
         results = harvester.harvest()
         
         logger.info("=" * 80)
         logger.info("HARVEST SUMMARY")
         logger.info("=" * 80)
+        logger.info(f"Search keyword: {keyword}")
+        logger.info(f"Days back: {days}")
         logger.info(f"Total articles: {results['statistics']['total_articles']}")
         logger.info(f"Source breakdown: {results['statistics']['source_breakdown']}")
         logger.info(f"Needs review: {results['statistics']['needs_manual_review']['count']}")

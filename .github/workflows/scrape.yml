@@ -2,9 +2,18 @@ name: Scrape medRxiv AI Articles
 
 on:
   schedule:
-    # Run daily at 2 AM UTC
-    - cron: '0 2 * * *'
-  workflow_dispatch:  # Allow manual trigger
+    # Run weekly on Monday at 2 AM UTC
+    - cron: '0 2 * * 1'
+  workflow_dispatch:  # Allow manual trigger for immediate runs
+    inputs:
+      search_keyword:
+        description: 'Search keyword (default: artificial intelligence)'
+        required: false
+        default: 'artificial intelligence'
+      days_back:
+        description: 'Days to look back (default: 30, use 365 for full 2025)'
+        required: false
+        default: '30'
 
 permissions:
   contents: write
@@ -39,6 +48,9 @@ jobs:
           GLM_MODEL_NAME: ${{ secrets.GLM_MODEL_NAME }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           BIO_MODEL_API_KEY: ${{ secrets.BIO_MODEL_API_KEY }}
+          BIO_MODEL_BASE_URL: ${{ secrets.BIO_MODEL_BASE_URL }}
+          SEARCH_KEYWORD: ${{ github.event.inputs.search_keyword || 'artificial intelligence' }}
+          DAYS_BACK: ${{ github.event.inputs.days_back || '30' }}
         run: |
           python src/harvest_medrxiv.py
       

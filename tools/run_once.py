@@ -1,7 +1,16 @@
 #!/usr/bin/env python3
 """
 Local testing tool for running a single harvest.
-Usage: python tools/run_once.py
+
+Usage: 
+  # Default (30 days, "artificial intelligence")
+  python tools/run_once.py
+  
+  # Full 2025 harvest (all of 2025)
+  DAYS_BACK=365 python tools/run_once.py
+  
+  # Custom keyword and time range
+  SEARCH_KEYWORD="machine learning" DAYS_BACK=7 python tools/run_once.py
 """
 import sys
 import os
@@ -36,7 +45,7 @@ try:
     
     # Check for required environment variables
     required_vars = ['GLM_API_KEY']
-    optional_vars = ['OPENAI_API_KEY', 'BIO_MODEL_API_KEY']
+    optional_vars = ['OPENAI_API_KEY', 'BIO_MODEL_API_KEY', 'BIO_MODEL_BASE_URL']
     
     print("Environment Check:")
     for var in required_vars:
@@ -49,6 +58,12 @@ try:
         status = "✓ Set" if value else "○ Not set (optional)"
         print(f"  {var}: {status}")
     
+    print()
+    print("Configuration:")
+    keyword = os.getenv('SEARCH_KEYWORD', 'artificial intelligence')
+    days = os.getenv('DAYS_BACK', '30')
+    print(f"  SEARCH_KEYWORD: {keyword}")
+    print(f"  DAYS_BACK: {days}")
     print()
     
     # Check if required vars are set
