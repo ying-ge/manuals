@@ -2,7 +2,6 @@ name: Scrape medRxiv AI Articles
 
 on:
   schedule:
-    # Run weekly on Monday at 2 AM UTC
     - cron: '0 17 * * 2' # 每周三 01:00 北京时间（UTC+8）
   workflow_dispatch:  # Allow manual trigger for immediate runs
     inputs:
