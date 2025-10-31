@@ -3,6 +3,7 @@ LLM Extractor with GLM -> OpenAI -> Heuristic fallback logic.
 """
 import os
 import re
+import json
 import logging
 from typing import Dict, Optional, Tuple
 
@@ -10,6 +11,13 @@ try:
     from src.glm_client import GLMClient
 except ImportError:
     from glm_client import GLMClient
+
+# Optional OpenAI import
+try:
+    import openai
+    OPENAI_AVAILABLE = True
+except ImportError:
+    OPENAI_AVAILABLE = False
 
 logger = logging.getLogger(__name__)
 
@@ -31,9 +39,8 @@ class LLMExtractor:
                 logger.warning(f"Failed to initialize GLM client: {e}")
         
         # Try to initialize OpenAI
-        if os.getenv('OPENAI_API_KEY'):
+        if OPENAI_AVAILABLE and os.getenv('OPENAI_API_KEY'):
             try:
-                import openai
                 self.openai_client = openai.OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
                 logger.info("OpenAI client initialized successfully")
             except Exception as e:
@@ -125,8 +132,6 @@ class LLMExtractor:
     
     def _parse_json_response(self, content: str) -> Dict[str, str]:
         """Parse JSON from response content."""
-        import json
-        
         # Try direct parse
         try:
             return json.loads(content.strip())
@@ -203,7 +208,7 @@ class LLMExtractor:
         """Extract what was done from abstract."""
         # Look for sentences with key phrases
         patterns = [
-            r'(?:we|this study|this work|the study)\s+([^.!?]+(?:developed|developed|investigated|analyzed|evaluated|examined|studied|assessed|compared|proposed|designed|implemented)[^.!?]+)',
+            r'(?:we|this study|this work|the study)\s+([^.!?]+(?:investigated|analyzed|evaluated|examined|studied|assessed|compared|proposed|designed|implemented)[^.!?]+)',
             r'(?:objective|aim|purpose|goal)[^.!?]*?:\s*([^.!?]+)',
             r'(?:background|introduction)[^.!?]*?:\s*([^.!?]+)',
         ]

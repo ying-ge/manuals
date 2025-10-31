@@ -38,6 +38,7 @@ class ArticleFetcher:
         """
         self.max_articles = max_articles
         self.biomodel_api_key = os.getenv('BIO_MODEL_API_KEY')
+        self.biomodel_base_url = os.getenv('BIO_MODEL_BASE_URL', 'https://api.biomodel.example.com')
     
     def fetch_articles(
         self,
@@ -89,8 +90,16 @@ class ArticleFetcher:
         """
         articles = []
         
-        # Placeholder - adjust URL and parameters based on actual BioModel API
-        base_url = "https://api.biomodel.example.com/search"  # Replace with actual URL
+        # Check if URL is configured and not the default placeholder
+        if self.biomodel_base_url == 'https://api.biomodel.example.com':
+            logger.warning(
+                "BioModel API URL is not configured (using placeholder). "
+                "Set BIO_MODEL_BASE_URL environment variable to use BioModel API."
+            )
+            return articles
+        
+        # Construct API URL
+        base_url = f"{self.biomodel_base_url}/search"
         
         params = {
             'query': keyword,

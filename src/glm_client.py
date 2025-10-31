@@ -4,6 +4,7 @@ Implements interaction with the GLM API for LLM-based extraction.
 """
 import os
 import json
+import re
 import time
 import logging
 from typing import Dict, Any, Optional
@@ -185,7 +186,6 @@ class GLMClient:
             pass
         
         # Try to find JSON block in markdown code fence
-        import re
         json_match = re.search(r'```(?:json)?\s*(\{.*?\})\s*```', content, re.DOTALL)
         if json_match:
             try:
