@@ -64,11 +64,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          timestamp=$(cat .harvest-timestamp)
+          timestamp="${{ steps.timestamp.outputs.timestamp }}"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add data .harvest-timestamp || true
+      
+          git add data || true
+          git commit -m "Update data ($timestamp)" || echo "no changes to commit"
+          git push || echo "push failed"
 
           # 如果没有变更则退出
           if git diff --cached --quiet; then
