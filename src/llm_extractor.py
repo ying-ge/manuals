@@ -6,7 +6,10 @@ import re
 import logging
 from typing import Dict, Optional, Tuple
 
-from src.glm_client import GLMClient
+try:
+    from src.glm_client import GLMClient
+except ImportError:
+    from glm_client import GLMClient
 
 logger = logging.getLogger(__name__)
 

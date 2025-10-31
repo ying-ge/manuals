@@ -12,7 +12,16 @@ from urllib.parse import quote
 import requests
 import feedparser
 from bs4 import BeautifulSoup
-from fuzzywuzzy import fuzz
+
+try:
+    from fuzzywuzzy import fuzz
+except ImportError:
+    # Fallback if fuzzywuzzy not available
+    class fuzz:
+        @staticmethod
+        def ratio(s1, s2):
+            # Simple fallback: exact match
+            return 100 if s1 == s2 else 0
 
 logger = logging.getLogger(__name__)
 

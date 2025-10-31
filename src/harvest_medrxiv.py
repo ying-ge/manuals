@@ -9,8 +9,12 @@ from datetime import datetime
 from typing import List, Dict
 from pathlib import Path
 
-from src.fetch_articles import ArticleFetcher
-from src.llm_extractor import LLMExtractor
+try:
+    from src.fetch_articles import ArticleFetcher
+    from src.llm_extractor import LLMExtractor
+except ImportError:
+    from fetch_articles import ArticleFetcher
+    from llm_extractor import LLMExtractor
 
 # Setup logging
 logging.basicConfig(

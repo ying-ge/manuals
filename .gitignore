@@ -39,12 +39,12 @@ env/
 # Environment variables
 .env
 
-# Logs
+# Logs (but keep .gitkeep)
 logs/*.log
 
-# Cache
-.cache/
-*.cache
+# Cache (but keep .gitkeep)
+.cache/*
+!.cache/.gitkeep
 
 # Test coverage
 .coverage
@@ -54,3 +54,8 @@ htmlcov/
 # OS
 .DS_Store
 Thumbs.db
+
+# Data files (but keep .gitkeep)
+# Uncomment if you don't want to commit data files
+# data/*.json
+# data/*.md
