@@ -1,9 +1,8 @@
 # AI Articles Report
 
 **Generated:** 2025-11-01T10:41:43.946634Z
-**Total Articles:** 101
-pubmed: 76 (75.2%)
-arxiv: 25 (24.8%)
+**Total Articles:** 124
+
 ---
 
 ## 1. Advances in clinical and translational research in endodontics: A comprehensive overview.
@@ -535,7 +534,35 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 20. Anomaly detection and early risk identification in digital disaster response-based on deep learning in public health.
+## 20. Post-pandemic era: global trends, benefits, and barriers in integrating artificial intelligence into public health education.
+
+**Last Corresponding Author:** Tosin Fakiyesi
+
+**Last Corresponding Author Affiliation:** Faculty of Clinical Sciences, University of Ibadan, Ibadan, Nigeria.
+
+
+**Published:** 2025-01-01
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41158581
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究回顾了非洲大陆在COVID-19大流行期间部署的公共卫生策略，强调了关键的成功经验，识别了关键的失败点，并总结了经验教训以指导未来的健康紧急情况准备。研究基于现有文献、政策文件和流行病学数据，考察了领导力、社区参与、健康传播、诊断能力和疫苗部署的作用。研究指出，一些非洲国家成功利用了过去的流行病经验、分散化的卫生系统和创新的传播策略，而其他国家则面临着虚假信息、薄弱的监测和有限的重症监护基础设施等挑战。此外，研究还讨论了国际合作、本地创新和捐助者依赖在塑造应对结果中的作用。非洲应对COVID-19的经验教训强调了加强公共卫生基础设施、投资于卫生人力发展、改善健康信息系统以及确保疫苗和治疗的公平获取的重要性。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 21. Anomaly detection and early risk identification in digital disaster response-based on deep learning in public health.
 
 **Last Corresponding Author:** Chun Pan
 
@@ -563,7 +590,119 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 21. Genomic biomarkers of liver toxicity risk from UK Biobank data.
+## 22. Proposing a novel ABCDEF framework for managing critical illness in geriatrics: challenges and perspectives.
+
+**Last Corresponding Author:** Li Li
+
+**Last Corresponding Author Affiliation:** Geriatric Medicine Center, Department of Geriatric Medicine, Zhejiang Provincial People's Hospital (Affiliated People's Hospital, Hangzhou Medical College), Hangzhou, China.
+
+
+**Published:** 2025-Dec-01
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41157965
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 这篇论文主要关注全球人口老龄化背景下，老年人在经历严重疾病时面临的挑战。研究指出，老年患者在临床研究中常被忽视，导致他们在治疗中可能得到不恰当的护理。论文探讨了老年患者因多种共病、多药联用以及生理反应改变等因素，导致缺乏针对老年人群的针对性研究和循证指南。此外，论文还强调了老年患者在治疗中更注重长期结果和生活质量，而非单纯的生存率，因此临床管理老年患者的严重疾病需要特别的考虑。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 23. Applications of Artificial Intelligence in Alpha-1 Antitrypsin Deficiency: A Systematic Review from a Respiratory Medicine Perspective.
+
+**Last Corresponding Author:** María Torres-Durán
+
+**Last Corresponding Author Affiliation:** Pulmonary Department, Hospital Álvaro Cunqueiro, 36312 Vigo, Spain.
+
+
+**Published:** 2025-Sep-30
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41155753
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 24. Interoperability as a Catalyst for Digital Health and Therapeutics: A Scoping Review of Emerging Technologies and Standards (2015-2025).
+
+**Last Corresponding Author:** Mallika Singh
+
+**Last Corresponding Author Affiliation:** School of Health Sciences and Practice, New York Medical College, 40 Sunshine Cottage Road, Valhalla, NY 10595, USA.
+
+
+**Published:** 2025-Oct-08
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41154939
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究探讨了数字健康和数字疗法中互操作性的重要性，特别是在人工智能、区块链和联邦学习等技术的集成背景下。针对低中等收入国家（LMICs）在实施标准化和可扩展系统时面临的特定挑战，研究旨在提出解决方案和策略。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 25. Use of and confidence in YouTube and ChatGPT in surgical teaching and training.
+
+**Last Corresponding Author:** Martin Harbitz Bruusgaard
+
+**Last Corresponding Author Affiliation:** Department of Community Medicine, Norwegian Centre for Rural Medicine, UiT The Arctic University of Norway, Tromsø, Norway.
+
+
+**Published:** 2025-Oct-28
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41153011
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究调查了医生使用YouTube和ChatGPT的频率、使用范围以及医生对这些资源在手术教学和培训中的信心程度。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 26. Genomic biomarkers of liver toxicity risk from UK Biobank data.
 
 **Last Corresponding Author:** Federico Goodsaid
 
@@ -591,7 +730,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 22. [Advances in radiomics for early diagnosis and precision treatment of lung cancer].
+## 27. [Advances in radiomics for early diagnosis and precision treatment of lung cancer].
 
 **Last Corresponding Author:** Weimin Li
 
@@ -619,7 +758,35 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 23. ProToxin, a Predictor of Protein Toxicity.
+## 28. Real-world data landscape for glaucoma in Europe: a questionnaire-based analysis of resources among European Glaucoma Society members.
+
+**Last Corresponding Author:** Ananth Viswanathan
+
+**Last Corresponding Author Affiliation:** University College London, London, UK.
+
+
+**Published:** 2025-Oct-28
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41151918
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究旨在调查支持欧洲范围内协作进行真实世界数据（RWD）收集的景观，并探讨是否为青光眼临床医生提供了所需资源。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 29. ProToxin, a Predictor of Protein Toxicity.
 
 **Last Corresponding Author:** Mauno Vihinen
 
@@ -647,7 +814,35 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 24. Integration of Artificial Intelligence in Biosensors for Enhanced Detection of Foodborne Pathogens.
+## 30. Diagnostic Performance of GPT-4o Compared to Radiology Residents in Emergency Abdominal Tomography Cases.
+
+**Last Corresponding Author:** Yelda Özsunar
+
+**Last Corresponding Author Affiliation:** Department of Radiology, Faculty of Medicine, Aydın Adnan Menderes University, Aydın 09010, Türkiye.
+
+
+**Published:** 2025-Sep-26
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41150165
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 31. Integration of Artificial Intelligence in Biosensors for Enhanced Detection of Foodborne Pathogens.
 
 **Last Corresponding Author:** Fazlurrahman Khan
 
@@ -675,7 +870,32 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 25. Transformative advances in single-cell omics: a comprehensive review of foundation models, multimodal integration and computational ecosystems.
+## 32. [The role of artificial intelligence in psychiatric diagnosis and classification: A state-of-the-art review in an uncharted domain].
+
+**Last Corresponding Author:** J S Legerstee
+
+**Published:** 2025-01-01
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41147481
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 这篇论文探讨了人工智能（AI）在主流医疗保健领域中的应用，特别是在复杂分类和诊断方面的潜力。研究内容主要集中在分析AI技术在医疗保健领域的应用前景，以及将AI技术应用于心理健康实践时面临的独特挑战。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 33. Transformative advances in single-cell omics: a comprehensive review of foundation models, multimodal integration and computational ecosystems.
 
 **Last Corresponding Author:** Huijing Hu
 
@@ -703,7 +923,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 26. Can machine learning improve on the early prediction of upper limb recovery after stroke?
+## 34. Can machine learning improve on the early prediction of upper limb recovery after stroke?
 
 **Last Corresponding Author:** R W Selles
 
@@ -731,7 +951,35 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 27. Current utility of artificial intelligence in benign prostate surgery: a review of literature on behalf of the EAU section of endourology.
+## 35. Evaluating Large Language Models in Ophthalmology: Systematic Review.
+
+**Last Corresponding Author:** Xianqun Fan
+
+**Last Corresponding Author Affiliation:** State Key Laboratory of Eye Health, Department of Ophthalmology, Shanghai Ninth People's Hospital, Shanghai Jiao Tong University School of Medicine, Shanghai, China.
+
+
+**Published:** 2025-Oct-27
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41144954
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究旨在对大型语言模型（LLMs）在眼科护理中的应用进行系统评估，以识别现有评估实践的不足，并指导未来的评估实践和临床整合。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 36. Current utility of artificial intelligence in benign prostate surgery: a review of literature on behalf of the EAU section of endourology.
 
 **Last Corresponding Author:** Vineet Gauhar
 
@@ -759,7 +1007,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 28. [ANMCO Position paper: ANMCO States General 2024 - Role of cardiologists in the management of chronic cardiovascular diseases].
+## 37. [ANMCO Position paper: ANMCO States General 2024 - Role of cardiologists in the management of chronic cardiovascular diseases].
 
 **Last Corresponding Author:** Fabrizio Oliva
 
@@ -787,7 +1035,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 29. [Heart and innovation: application of synthetic artificial intelligence in cardiology].
+## 38. [Heart and innovation: application of synthetic artificial intelligence in cardiology].
 
 **Last Corresponding Author:** Sandro Gelsomino
 
@@ -815,7 +1063,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 30. [Resolving the diagnostic dilemma of gastroesophageal reflux disease: multimodal integration strategies and novel perspectives for precision assessment].
+## 39. [Resolving the diagnostic dilemma of gastroesophageal reflux disease: multimodal integration strategies and novel perspectives for precision assessment].
 
 **Last Corresponding Author:** Y L Xiao
 
@@ -843,7 +1091,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 31. Precision health monitoring in spaceflight with integration of lower body negative pressure and advanced large language model artificial intelligence.
+## 40. Precision health monitoring in spaceflight with integration of lower body negative pressure and advanced large language model artificial intelligence.
 
 **Last Corresponding Author:** Alireza Tavakkoli
 
@@ -871,7 +1119,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 32. Machine Learning Applications in Population and Public Health: Guidelines for Development, Testing, and Implementation.
+## 41. Machine Learning Applications in Population and Public Health: Guidelines for Development, Testing, and Implementation.
 
 **Last Corresponding Author:** Sharmistha Mishra
 
@@ -899,7 +1147,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 33. Global Cancer Imaging Access: Addressing Barriers and Harnessing Innovations.
+## 42. Global Cancer Imaging Access: Addressing Barriers and Harnessing Innovations.
 
 **Last Corresponding Author:** Vikas Gulani
 
@@ -927,7 +1175,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 34. E-ABIN: an explainable module for anomaly detection in biological networks.
+## 43. E-ABIN: an explainable module for anomaly detection in biological networks.
 
 **Last Corresponding Author:** Pietro Hiram Guzzi
 
@@ -955,7 +1203,35 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 35. Mentorship in African health and clinical research: addressing barriers and building research capacity.
+## 44. [Development and dissemination of precision medicine approaches in gastric cancer management].
+
+**Last Corresponding Author:** Anqiang Wang
+
+**Last Corresponding Author Affiliation:** Gastrointestinal Cancer Center, Peking University Cancer Hospital & Institute, Beijing 100142, China.
+
+
+**Published:** 2025-Oct-18
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41131756
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究由北京大学肿瘤医院贾富教授领导的团队针对胃癌诊断和治疗的关键挑战，开展了“胃癌管理中精准医学方法的发展和推广”项目。通过一系列高质量的多中心临床研究，团队建立了围手术期治疗、个体化药物选择、智能非侵入性诊断和新型免疫治疗策略的新国际标准。这些进展显著提高了治疗效果，减少了手术创伤，在诊断、治疗和机制理解方面实现了关键技术突破，系统地提高了胃癌患者的预后。该项目的发现具有广泛的国际影响，包括举办中国首届国际胃癌大会。通过全国推广，他们推动了胃癌精准诊断和治疗学科的发展，并领导制定了国家卫生健康委员会的胃癌诊断和治疗指南。该项目因其成就荣获2024年中国医学科学技术奖一等奖。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 45. Mentorship in African health and clinical research: addressing barriers and building research capacity.
 
 **Last Corresponding Author:** Okoli Chukwudinma Chigozie
 
@@ -983,7 +1259,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 36. AI-Driven Variant Annotation for Precision Oncology in Breast Cancer.
+## 46. AI-Driven Variant Annotation for Precision Oncology in Breast Cancer.
 
 **Last Corresponding Author:** Elizabeth Brunk
 
@@ -1011,7 +1287,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 37. Concordance in Basal Cell Carcinoma Diagnosis. Building a Proper Standard Reference to Train Artificial Intelligence Tools.
+## 47. Concordance in Basal Cell Carcinoma Diagnosis. Building a Proper Standard Reference to Train Artificial Intelligence Tools.
 
 **Last Corresponding Author:** Begoña Acha
 
@@ -1039,7 +1315,35 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 38. Harnessing multi-omics and genome-editing technologies for climate-resilient agriculture: bridging AI-driven insights with sustainable crop improvement.
+## 48. Secondary antibody deficiencies in the modern era: emerging trends, diagnostic pitfalls, and advances in personalised management.
+
+**Last Corresponding Author:** Rehan Bhana
+
+**Last Corresponding Author Affiliation:** Birmingham City University, Birmingham, United Kingdom.
+
+
+**Published:** 2025-01-01
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41126828
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究关注的是继发性抗体缺陷（SADs）这一类获得性免疫缺陷，探讨了其在血液恶性肿瘤、免疫抑制治疗和蛋白质丢失等临床环境中的发生情况。研究发现，SADs与反复和严重的感染、住院以及生活质量下降的风险增加有关。尽管如此，诊断和治疗途径在医疗保健设置和地区之间仍然不一致。研究利用结构化临床数据，包括电子健康记录和系统实验室评估的进展，展示了在促进SADs早期识别方面的潜力。这些方法支持更及时的治疗决策，并促进护理标准的统一。研究旨在通过达成对诊断标准、治疗阈值和专科免疫学服务可及性的更广泛共识，以改善SADs患者的预后。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 49. Harnessing multi-omics and genome-editing technologies for climate-resilient agriculture: bridging AI-driven insights with sustainable crop improvement.
 
 **Last Corresponding Author:** Amna Syeda
 
@@ -1067,7 +1371,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 39. From Chaos to Clarity: Deriving Meaningful Biology from Big Data in Plant Pathology.
+## 50. From Chaos to Clarity: Deriving Meaningful Biology from Big Data in Plant Pathology.
 
 **Last Corresponding Author:** Karen A Garrett
 
@@ -1095,7 +1399,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 40. Democratising Artificial Intelligence for Pandemic Preparedness and Global Governance in Latin American and Caribbean Countries.
+## 51. Democratising Artificial Intelligence for Pandemic Preparedness and Global Governance in Latin American and Caribbean Countries.
 
 **Last Corresponding Author:** André de Carvalho
 
@@ -1123,7 +1427,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 41. Defining endotypes of bronchopulmonary dysplasia in preterm infants to improve precision-based therapies.
+## 52. Defining endotypes of bronchopulmonary dysplasia in preterm infants to improve precision-based therapies.
 
 **Last Corresponding Author:** Venkatesh Sampath
 
@@ -1151,7 +1455,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 42. AI-based patient monitoring for fall prevention in stroke patients: a pilot study at a Malaysian acute stroke unit.
+## 53. AI-based patient monitoring for fall prevention in stroke patients: a pilot study at a Malaysian acute stroke unit.
 
 **Last Corresponding Author:** Alan Swee Hock Ch'ng
 
@@ -1179,7 +1483,35 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 43. Scalable, trustworthy generative model for virtual multi-staining from H&E whole slide images.
+## 54. Factors influencing the choice of radiology as a specialty among clinical-year medical students in Nigeria: a multi-center cross-sectional study.
+
+**Last Corresponding Author:** Kingsley Chidiebere Nwaogu
+
+**Last Corresponding Author Affiliation:** Department of Radiology, Nnamdi Azikiwe University Teaching Hospital, Nnewi, Anambra State, Nigeria.
+
+
+**Published:** 2025-Oct-21
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41121301
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究旨在评估尼日利亚临床年级医学生中对放射学的兴趣水平，并识别影响专业选择的因素。研究内容包括对尼日利亚临床年级医学生的问卷调查，以了解他们对放射学的兴趣程度，并分析影响他们选择放射学作为专业的原因。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 55. Scalable, trustworthy generative model for virtual multi-staining from H&E whole slide images.
 
 **Last Corresponding Author:** Daniel Racoceanu
 
@@ -1207,7 +1539,35 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 44. Ethical and legal considerations of artificial intelligence applications in psychiatric violence risk assessment: A scoping review protocol.
+## 56. Explicating miRNA-mediated regulation of inflammatory pathways in COPD, MS, and lung cancer using explainable artificial intelligence: insights from peripheral blood profiles.
+
+**Last Corresponding Author:** Yasha Hasija
+
+**Last Corresponding Author Affiliation:** Department of Biotechnology, Delhi Technological University Shahbad Daulatpur, Main Bawana Road, Delhi-110042, India.
+
+
+**Published:** 2025-Jan-08
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41118410
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究旨在探讨慢性阻塞性肺疾病（COPD）、多发性硬化症（MS）和肺癌之间通过共同的炎症途径和免疫失调相互联系。研究通过分析miRNAs在调节这些过程中所起的作用，以及它们在神经系统和呼吸系统分子机制中的角色，以加深对miRNAs在疾病发生发展中的理解。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 57. Ethical and legal considerations of artificial intelligence applications in psychiatric violence risk assessment: A scoping review protocol.
 
 **Last Corresponding Author:** Laura Sikstrom
 
@@ -1235,7 +1595,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 45. AI for Radiology: A Primer Part I. From Idea to Algorithm.
+## 58. AI for Radiology: A Primer Part I. From Idea to Algorithm.
 
 **Last Corresponding Author:** John Mongan
 
@@ -1263,7 +1623,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 46. Artificial intelligence coupled to pharmacometrics modelling to tailor malaria and tuberculosis treatment in Africa.
+## 59. Artificial intelligence coupled to pharmacometrics modelling to tailor malaria and tuberculosis treatment in Africa.
 
 **Last Corresponding Author:** Miquel Duran-Frigola
 
@@ -1291,7 +1651,91 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 47. Multimodal artificial intelligence technology in the precision diagnosis and treatment of gastroenterology and hepatology: Innovative applications and challenges.
+## 60. Time for Clarity in Exploring the Evidence and Key Concepts of Human-Centered Design in Digital Health Care: Protocol for a Scoping Review.
+
+**Last Corresponding Author:** Björn Schreiweis
+
+**Last Corresponding Author Affiliation:** Institute for Medical Informatics and Statistics, Kiel University and University Hospital Schleswig-Holstein, Kiel, Germany.
+
+
+**Published:** 2025-Oct-20
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41115266
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究旨在解决人类中心设计（HCD）方法，如设计思维（DT）、以用户为中心的设计、共创和参与式设计（PD）在eHealth应用开发中应用的混淆问题。研究通过范围综述的方式，探讨了这些方法在eHealth解决方案开发中的应用，并分析了它们之间的差异和联系。研究旨在提供一个基于实证的框架，以促进HCD方法在eHealth领域的整合和应用，从而推动研究和理论共识的形成。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 61. A Crossroads in Cardiovascular Medicine: Progress and Barriers to Impact.
+
+**Last Corresponding Author:** Victor J Dzau
+
+**Last Corresponding Author Affiliation:** Mandel Center for Heart and Vascular Research, Duke Cardiovascular Research Center, Duke University, Durham, NC (V.J.D.).
+
+
+**Published:** 2025-Oct-21
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41115161
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 这篇论文回顾了心血管科学和技术在过去75年中的进步，分析了这些进步如何显著降低了心血管疾病的发病率和死亡率。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 62. Efficacy of Telemedical Interventional Management in Patients with Coronary Heart Disease Undergoing Percutaneous Coronary Intervention: Randomized Controlled Trial.
+
+**Last Corresponding Author:** Likun Ma
+
+**Last Corresponding Author Affiliation:** Department of Cardiology, Centre for Leading Medicine and Advanced Technologies of IHM, The First Affiliated Hospital of USTC, Division of Life Sciences and Medicine, University of Science and Technology of China, Hefei, China.
+
+
+**Published:** 2025-Oct-20
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41115159
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究旨在解决冠状动脉心脏病（CHD）患者面临的高复发风险问题。研究通过远程医疗干预，提供远程监测和个性化患者管理策略，以改善患者的二级预防。研究内容包括对PCI术后患者进行远程监测，评估药物依从性和生活方式改变，以及通过远程医疗平台提供个性化的患者管理方案。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 63. Multimodal artificial intelligence technology in the precision diagnosis and treatment of gastroenterology and hepatology: Innovative applications and challenges.
 
 **Last Corresponding Author:** Zi-Xin Qi
 
@@ -1319,7 +1763,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 48. A Survey of Artificial Intelligence in Primary Care Fellowships-Practical Tools.
+## 64. A Survey of Artificial Intelligence in Primary Care Fellowships-Practical Tools.
 
 **Last Corresponding Author:** Uzoma Dike
 
@@ -1347,7 +1791,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 49. Artificial Intelligence in Patient Management.
+## 65. Artificial Intelligence in Patient Management.
 
 **Last Corresponding Author:** Nicholas Conley
 
@@ -1375,7 +1819,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 50. [Evaluation of ChatGPT's responses to symptom-oriented questions in otolaryngology].
+## 66. [Evaluation of ChatGPT's responses to symptom-oriented questions in otolaryngology].
 
 **Last Corresponding Author:** Ádám Perényi
 
@@ -1403,7 +1847,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 51. Immersive Solutions With Real-World Impact: Integrating Artificial Intelligence and Virtual Reality Into Global Suicide Prevention Training for Psychiatric Nurses.
+## 67. Immersive Solutions With Real-World Impact: Integrating Artificial Intelligence and Virtual Reality Into Global Suicide Prevention Training for Psychiatric Nurses.
 
 **Last Corresponding Author:** Erman Yıldız
 
@@ -1431,7 +1875,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 52. Artificial intelligence in biology and medicine.
+## 68. Artificial intelligence in biology and medicine.
 
 **Last Corresponding Author:** Elvira Rozhina
 
@@ -1459,7 +1903,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 53. Beyond the Horizon in Endodontics.
+## 69. Beyond the Horizon in Endodontics.
 
 **Last Corresponding Author:** Tung Bui
 
@@ -1487,7 +1931,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 54. Implementation of a Digital Health Intervention (CHAMP) for Self-Monitoring of Hypertension: Protocol for 3 Interlinked Implementation Studies.
+## 70. Implementation of a Digital Health Intervention (CHAMP) for Self-Monitoring of Hypertension: Protocol for 3 Interlinked Implementation Studies.
 
 **Last Corresponding Author:** Nick Sevdalis
 
@@ -1515,7 +1959,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 55. Precision nanomedicine for anxiety: challenges, opportunities, and future directions in targeted drug delivery.
+## 71. Precision nanomedicine for anxiety: challenges, opportunities, and future directions in targeted drug delivery.
 
 **Last Corresponding Author:** Shailesh Sharma
 
@@ -1543,7 +1987,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 56. Improving diagnosis: advances in radiology.
+## 72. Improving diagnosis: advances in radiology.
 
 **Last Corresponding Author:** Michael A Bruno
 
@@ -1571,7 +2015,119 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 57. Generative Artificial Intelligence for Data Analysis: A Randomised Controlled Trial in a Public Health Research Institute.
+## 73. EndoCompass project: research roadmap for thyroid endocrinology.
+
+**Last Corresponding Author:** W Edward Visser
+
+**Last Corresponding Author Affiliation:** Department of Internal Medicine, Erasmus MC Academic Center for Thyroid Diseases, 3015 GE Rotterdam, The Netherlands.
+
+
+**Published:** 2025-Oct-17
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41104474
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究分析了CORDIS数据库，揭示了内分泌科学在社会影响和科研优先级之间的持续差距。研究发现，在国家资金层面，内分泌学会报告称，国家研究资金对内分泌学的关注有限或很少。EndoCompass项目是一个由欧洲内分泌学会和欧洲儿科内分泌学会共同发起的联合倡议，旨在确定和推广内分泌科学中的战略研究优先事项，以应对关键的激素相关健康挑战。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 74. EndoCompass project: artificial intelligence in endocrinology.
+
+**Last Corresponding Author:** Jonathan Mertens
+
+**Last Corresponding Author Affiliation:** Laboratory of Experimental Medicine and Paediatrics, Universiteit Antwerpen, Antwerp, Belgium.
+
+
+**Published:** 2025-Oct-17
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41104470
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究分析了CORDIS数据库，揭示了内分泌科学在社会影响和科研优先级之间的持续差距。研究发现，在国家资金层面，内分泌学会报告称，国家研究资金对内分泌学的关注有限或很少。EndoCompass项目是一个由欧洲内分泌学会和欧洲儿科内分泌学会共同发起的联合倡议，旨在确定和推广内分泌科学中的战略研究优先事项，以应对关键的激素相关健康挑战。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 75. EndoCompass project: research roadmap for pituitary and neuroendocrine tumor endocrinology.
+
+**Last Corresponding Author:** Maria Chiara Zatelli
+
+**Last Corresponding Author Affiliation:** Section of Endocrinology & Internal Medicine, Dept of Medical Sciences, University of Ferrara, Ferrara 44121, Italy.
+
+
+**Published:** 2025-Oct-17
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41104469
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究分析了CORDIS数据库，揭示了内分泌科学在社会影响和科研优先级之间的持续差距。研究发现，在国家资金层面，内分泌学会报告称，国家研究资金对内分泌学的关注有限或很少。EndoCompass项目是一个由欧洲内分泌学会和欧洲儿科内分泌学会共同发起的联合倡议，旨在确定和推广内分泌科学中的战略研究优先事项，以应对关键的激素相关健康挑战。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 76. EndoCompass project: endocrine laboratory medicine.
+
+**Last Corresponding Author:** Véronique Raverot
+
+**Last Corresponding Author Affiliation:** Service de Biochimie et Biologie Moléculaire, Laboratoire de Biologie Médicale Multi-Sites (LBMMS), Hospices Civils de Lyon, 69002 Lyon, France.
+
+
+**Published:** 2025-Oct-17
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41104467
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究分析了CORDIS数据库，揭示了内分泌科学在社会影响和科研优先级之间的持续差距。研究发现，在国家资金层面，内分泌学会报告称，国家研究资金对内分泌学的关注有限或很少。EndoCompass项目是一个由欧洲内分泌学会和欧洲儿科内分泌学会共同发起的联合倡议，旨在确定和推广内分泌科学中的战略研究优先事项，以应对关键的激素相关健康挑战。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 77. Generative Artificial Intelligence for Data Analysis: A Randomised Controlled Trial in a Public Health Research Institute.
 
 **Last Corresponding Author:** Julia Bohlius
 
@@ -1599,7 +2155,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 58. Comparison of missing data handling methods for variant pathogenicity predictors.
+## 78. Comparison of missing data handling methods for variant pathogenicity predictors.
 
 **Last Corresponding Author:** Jussi Paananen
 
@@ -1627,7 +2183,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 59. High-fidelity, personalized cardiac modeling via AI-driven 3D reconstruction and embedded silicone rubber printing.
+## 79. High-fidelity, personalized cardiac modeling via AI-driven 3D reconstruction and embedded silicone rubber printing.
 
 **Last Corresponding Author:** Ting Song
 
@@ -1655,7 +2211,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 60. Exosomal biomarkers in leukemia: translational potential and regulatory challenges for precision medicine applications.
+## 80. Exosomal biomarkers in leukemia: translational potential and regulatory challenges for precision medicine applications.
 
 **Last Corresponding Author:** Xiaoning Wang
 
@@ -1683,7 +2239,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 61. Harnessing artificial intelligence for cancer rehabilitation: A call to action.
+## 81. Harnessing artificial intelligence for cancer rehabilitation: A call to action.
 
 **Last Corresponding Author:** Jie Hao
 
@@ -1711,7 +2267,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 62. Evaluating the quality of ChatGPT-generated medical information on major ophthalmic conditions: A comparative assessment against the EQIP tool and guidelines.
+## 82. Evaluating the quality of ChatGPT-generated medical information on major ophthalmic conditions: A comparative assessment against the EQIP tool and guidelines.
 
 **Last Corresponding Author:** Yuying Wang
 
@@ -1739,7 +2295,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 63. TastepepAI: An artificial intelligence platform for taste peptide de novo design.
+## 83. TastepepAI: An artificial intelligence platform for taste peptide de novo design.
 
 **Last Corresponding Author:** Ying Wang
 
@@ -1767,7 +2323,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 64. Leveraging Artificial Intelligence Tools to Bridge the Healthcare Gap in Rural Areas in India.
+## 84. Leveraging Artificial Intelligence Tools to Bridge the Healthcare Gap in Rural Areas in India.
 
 **Last Corresponding Author:** Sathiyaseelan Balasundaram
 
@@ -1795,7 +2351,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 65. AI-based hardware and software tools in microscopy to boost research in immunology and virology.
+## 85. AI-based hardware and software tools in microscopy to boost research in immunology and virology.
 
 **Last Corresponding Author:** Rocco D'Antuono
 
@@ -1823,7 +2379,63 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 66. Inflammatory and Oxidative Biological Profiles in Mental Disorders: Perspectives on Diagnostics and Personalized Therapy.
+## 86. Nanomedicine in the Fight Against Multidrug-Resistant Infections: A Review on Emerging Strategies and Translational Prospects.
+
+**Last Corresponding Author:** Alqassem Hamdallah Abuarqoub
+
+**Last Corresponding Author Affiliation:** Al-Wafi Group for Marketing and Int'l Trade Co. Ltd, Amman, Jordan.
+
+
+**Published:** 2025-01-01
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41098500
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究针对全球多药耐药（MDR）细菌的兴起，提出了一种利用纳米医学的多学科策略来应对这一挑战。研究内容包括开发工程化纳米材料，如脂质体、金属纳米颗粒、聚合物纳米颗粒、树枝状大分子和碳基纳米结构，用于靶向药物递送和增强抗菌治疗。这些纳米材料具有独特的特性，包括破坏微生物细胞膜、产生活性氧（ROS）以及促进抗生素的受控和特异性释放，从而提高对耐药菌株的疗效。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 87. Production of β-Glucans by 
+
+**Last Corresponding Author:** Justyna Możejko-Ciesielska
+
+**Last Corresponding Author Affiliation:** Department of Microbiology and Mycology, Faculty of Biology and Biotechnology, University of Warmia and Mazury in Olsztyn, 10-719 Olsztyn, Poland.
+
+
+**Published:** 2025-Oct-05
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41096968
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 88. Inflammatory and Oxidative Biological Profiles in Mental Disorders: Perspectives on Diagnostics and Personalized Therapy.
 
 **Last Corresponding Author:** Ewa Alicja Ogłodek
 
@@ -1851,7 +2463,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 67. Molecular Basis, Diagnostic Approaches, and Therapeutic Strategies in Colorectal Cancer-Comprehensive Review.
+## 89. Molecular Basis, Diagnostic Approaches, and Therapeutic Strategies in Colorectal Cancer-Comprehensive Review.
 
 **Last Corresponding Author:** Łukasz Bednarczyk
 
@@ -1879,7 +2491,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 68. CRISPR and Artificial Intelligence in Neuroregeneration: Closed-Loop Strategies for Precision Medicine, Spinal Cord Repair, and Adaptive Neuro-Oncology.
+## 90. CRISPR and Artificial Intelligence in Neuroregeneration: Closed-Loop Strategies for Precision Medicine, Spinal Cord Repair, and Adaptive Neuro-Oncology.
 
 **Last Corresponding Author:** Răzvan-Adrian Covache-Busuioc
 
@@ -1907,7 +2519,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 69. Artificial Intelligence-Driven Multi-Omics Approaches in Glioblastoma.
+## 91. Artificial Intelligence-Driven Multi-Omics Approaches in Glioblastoma.
 
 **Last Corresponding Author:** Sebastiano Cavallaro
 
@@ -1935,7 +2547,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 70. Biomarkers for Personalised Primary or Secondary Prevention in Cardiovascular Diseases: A Rapid Scoping Review.
+## 92. Biomarkers for Personalised Primary or Secondary Prevention in Cardiovascular Diseases: A Rapid Scoping Review.
 
 **Last Corresponding Author:** Mark Kroese
 
@@ -1963,7 +2575,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 71. An Accessible AI-Assisted Rehabilitation System for Guided Upper Limb Therapy.
+## 93. An Accessible AI-Assisted Rehabilitation System for Guided Upper Limb Therapy.
 
 **Last Corresponding Author:** Mohammad H Rahman
 
@@ -1991,7 +2603,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 72. Strengthening ethics review of the development of artificial intelligence (AI) systems in health research: a guide for research ethics committees in Uganda.
+## 94. Strengthening ethics review of the development of artificial intelligence (AI) systems in health research: a guide for research ethics committees in Uganda.
 
 **Last Corresponding Author:** Erisa S Mwaka
 
@@ -2019,7 +2631,35 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 73. Regulatory and Legal Considerations with Artificial Intelligence in Dermatology.
+## 95. Implementing an integrated multidisciplinary telehealth platform: a case study at Taichung Veterans General Hospital.
+
+**Last Corresponding Author:** Yi-Ju Chen
+
+**Last Corresponding Author Affiliation:** Department of Dermatology, Taichung Veterans General Hospital, Taichung, Taiwan.
+
+
+**Published:** 2025-Oct-15
+
+**URL:** https://pubmed.ncbi.nlm.nih.gov/41093627
+
+**Source:** pubmed
+
+### Extracted Information
+
+**What was done:** 本研究旨在评估在台湾中部实施多学科综合远程医疗平台对医疗可及性、应急响应和慢性病管理的影响。
+
+**AI Role:** 
+
+**Models:** 
+
+**Data Sources:** 
+
+**Metrics:** 
+
+
+---
+
+## 96. Regulatory and Legal Considerations with Artificial Intelligence in Dermatology.
 
 **Last Corresponding Author:** Rubeta N Matin
 
@@ -2047,7 +2687,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 74. Generative Artificial Intelligence in Dermatology: A Primer.
+## 97. Generative Artificial Intelligence in Dermatology: A Primer.
 
 **Last Corresponding Author:** Jonathan Kantor
 
@@ -2075,7 +2715,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 75. Educating Dermatologists for the Artificial Intelligence Era.
+## 98. Educating Dermatologists for the Artificial Intelligence Era.
 
 **Last Corresponding Author:** Ivy Lee
 
@@ -2103,7 +2743,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 76. Artificial Intelligence in Cosmetic Dermatology and Dermatologic Surgery.
+## 99. Artificial Intelligence in Cosmetic Dermatology and Dermatologic Surgery.
 
 **Last Corresponding Author:** Daniel Isaac Schlessinger
 
@@ -2131,7 +2771,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 77. Defeating the Training-Inference Mismatch via FP16
+## 100. Defeating the Training-Inference Mismatch via FP16
 
 **Last Corresponding Author:** Min Lin
 
@@ -2156,7 +2796,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 78. Remote Labor Index: Measuring AI Automation of Remote Work
+## 101. Remote Labor Index: Measuring AI Automation of Remote Work
 
 **Last Corresponding Author:** Dan Hendrycks
 
@@ -2181,7 +2821,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 79. Clone Deterministic 3D Worlds with Geometrically-Regularized World   Models
+## 102. Clone Deterministic 3D Worlds with Geometrically-Regularized World   Models
 
 **Last Corresponding Author:** Yubei Chen
 
@@ -2206,7 +2846,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 80. Faithful and Fast Influence Function via Advanced Sampling
+## 103. Faithful and Fast Influence Function via Advanced Sampling
 
 **Last Corresponding Author:** Hyun Jong Yang
 
@@ -2231,7 +2871,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 81. STaMP: Sequence Transformation and Mixed Precision for Low-Precision   Activation Quantization
+## 104. STaMP: Sequence Transformation and Mixed Precision for Low-Precision   Activation Quantization
 
 **Last Corresponding Author:** Markus Nagel
 
@@ -2256,7 +2896,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 82. The Oversight Game: Learning to Cooperatively Balance an AI Agent's   Safety and Autonomy
+## 105. The Oversight Game: Learning to Cooperatively Balance an AI Agent's   Safety and Autonomy
 
 **Last Corresponding Author:** Mohsen Bayati
 
@@ -2281,7 +2921,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 83. Deep sequence models tend to memorize geometrically; it is unclear why
+## 106. Deep sequence models tend to memorize geometrically; it is unclear why
 
 **Last Corresponding Author:** Sanjiv Kumar
 
@@ -2306,7 +2946,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 84. Non-Convex Over-the-Air Heterogeneous Federated Learning: A   Bias-Variance Trade-off
+## 107. Non-Convex Over-the-Air Heterogeneous Federated Learning: A   Bias-Variance Trade-off
 
 **Last Corresponding Author:** Nicolò Michelusi
 
@@ -2331,7 +2971,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 85. On the limitation of evaluating machine unlearning using only a single   training seed
+## 108. On the limitation of evaluating machine unlearning using only a single   training seed
 
 **Last Corresponding Author:** Georgina Cosma
 
@@ -2356,7 +2996,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 86. A Proposed Framework for Quantifying AI-to-Clinical Translation: The   Algorithm-to-Outcome Concordance (AOC) Metric
+## 109. A Proposed Framework for Quantifying AI-to-Clinical Translation: The   Algorithm-to-Outcome Concordance (AOC) Metric
 
 **Last Corresponding Author:** Kai Fu
 
@@ -2381,7 +3021,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 87. Hybrid DQN-TD3 Reinforcement Learning for Autonomous Navigation in   Dynamic Environments
+## 110. Hybrid DQN-TD3 Reinforcement Learning for Autonomous Navigation in   Dynamic Environments
 
 **Last Corresponding Author:** Zimeng Bai
 
@@ -2406,7 +3046,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 88. Aeolus: A Multi-structural Flight Delay Dataset
+## 111. Aeolus: A Multi-structural Flight Delay Dataset
 
 **Last Corresponding Author:** Yuankai Wu
 
@@ -2431,7 +3071,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 89. Multiclass Local Calibration With the Jensen-Shannon Distance
+## 112. Multiclass Local Calibration With the Jensen-Shannon Distance
 
 **Last Corresponding Author:** Andrea Pugnana
 
@@ -2456,7 +3096,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 90. Adaptive Inverse Kinematics Framework for Learning Variable-Length Tool   Manipulation in Robotics
+## 113. Adaptive Inverse Kinematics Framework for Learning Variable-Length Tool   Manipulation in Robotics
 
 **Last Corresponding Author:** Sravani Boddepalli
 
@@ -2481,7 +3121,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 91. The Structure of Relation Decoding Linear Operators in Large Language   Models
+## 114. The Structure of Relation Decoding Linear Operators in Large Language   Models
 
 **Last Corresponding Author:** Dániel Varga
 
@@ -2506,7 +3146,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 92. A Three-Stage Bayesian Transfer Learning Framework to Improve   Predictions in Data-Scarce Domains
+## 115. A Three-Stage Bayesian Transfer Learning Framework to Improve   Predictions in Data-Scarce Domains
 
 **Last Corresponding Author:** Xu Wu
 
@@ -2531,7 +3171,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 93. Biological Engineering: What does it mean? Where does it -- need to --   go?
+## 116. Biological Engineering: What does it mean? Where does it -- need to --   go?
 
 **Last Corresponding Author:** Viktor Stein
 
@@ -2556,7 +3196,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 94. Inside CORE-KG: Evaluating Structured Prompting and Coreference   Resolution for Knowledge Graphs
+## 117. Inside CORE-KG: Evaluating Structured Prompting and Coreference   Resolution for Knowledge Graphs
 
 **Last Corresponding Author:** Carlotta Domeniconi
 
@@ -2581,7 +3221,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 95. LINK-KG: LLM-Driven Coreference-Resolved Knowledge Graphs for Human   Smuggling Networks
+## 118. LINK-KG: LLM-Driven Coreference-Resolved Knowledge Graphs for Human   Smuggling Networks
 
 **Last Corresponding Author:** Guadalupe Correa-Cabrera
 
@@ -2606,7 +3246,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 96. Counteracting Matthew Effect in Self-Improvement of LVLMs through   Head-Tail Re-balancing
+## 119. Counteracting Matthew Effect in Self-Improvement of LVLMs through   Head-Tail Re-balancing
 
 **Last Corresponding Author:** Xuanjing Huang
 
@@ -2631,7 +3271,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 97. Vectorized Context-Aware Embeddings for GAT-Based Collaborative   Filtering
+## 120. Vectorized Context-Aware Embeddings for GAT-Based Collaborative   Filtering
 
 **Last Corresponding Author:** Luis Rueda
 
@@ -2656,7 +3296,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 98. Robust Graph Condensation via Classification Complexity Mitigation
+## 121. Robust Graph Condensation via Classification Complexity Mitigation
 
 **Last Corresponding Author:** Philip S. Yu
 
@@ -2681,7 +3321,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 99. Personalized Treatment Outcome Prediction from Scarce Data via   Dual-Channel Knowledge Distillation and Adaptive Fusion
+## 122. Personalized Treatment Outcome Prediction from Scarce Data via   Dual-Channel Knowledge Distillation and Adaptive Fusion
 
 **Last Corresponding Author:** Shengcai Liu
 
@@ -2706,7 +3346,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 100. Autograder+: A Multi-Faceted AI Framework for Rich Pedagogical Feedback   in Programming Education
+## 123. Autograder+: A Multi-Faceted AI Framework for Rich Pedagogical Feedback   in Programming Education
 
 **Last Corresponding Author:** Nitin Mane
 
@@ -2731,7 +3371,7 @@ arxiv: 25 (24.8%)
 
 ---
 
-## 101. Scales++: Compute Efficient Evaluation Subset Selection with Cognitive   Scales Embeddings
+## 124. Scales++: Compute Efficient Evaluation Subset Selection with Cognitive   Scales Embeddings
 
 **Last Corresponding Author:** Jonathan Richard Schwarz
 
