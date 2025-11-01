@@ -6,7 +6,7 @@ import json
 import logging
 import time
 from datetime import datetime
-from typing import List, Dict
+from typing import List, Dict, Optional
 from pathlib import Path
 
 try:
@@ -35,6 +35,7 @@ class MedRxivHarvester:
         self,
         keyword: str = "artificial intelligence",
         days: int = 30,
+        year: Optional[int] = None,
         max_articles: int = 200,
         llm_concurrency: int = 3,
         llm_delay: float = 0.5
@@ -44,13 +45,15 @@ class MedRxivHarvester:
         
         Args:
             keyword: Search keyword
-            days: Number of days to look back
+            days: Number of days to look back (ignored if year is specified)
+            year: Filter by publication year (e.g., 2025)
             max_articles: Maximum articles to fetch
             llm_concurrency: LLM request concurrency limit
             llm_delay: Delay between LLM requests in seconds
         """
         self.keyword = keyword
         self.days = days
+        self.year = year
         self.max_articles = max_articles
         self.llm_concurrency = llm_concurrency
         self.llm_delay = llm_delay
@@ -93,7 +96,9 @@ class MedRxivHarvester:
         
         # Step 1: Fetch articles
         logger.info(f"Fetching articles with keyword: {self.keyword}")
-        articles = self.fetcher.fetch_articles(self.keyword, self.days)
+        if self.year:
+            logger.info(f"Filtering for year: {self.year}")
+        articles = self.fetcher.fetch_articles(self.keyword, self.days, self.year)
         logger.info(f"Fetched {len(articles)} articles")
         
         # Step 2: Fetch full abstracts for articles that don't have them
@@ -251,18 +256,24 @@ class MedRxivHarvester:
             lines.extend([
                 f"## {i}. {article.get('title', 'Untitled')}",
                 "",
-                f"**Corresponding Author:** {article.get('corresponding_author', 'N/A')}",
+                f"**Last Corresponding Author:** {article.get('last_corresponding_author', article.get('corresponding_author', 'N/A'))}",
                 ""
             ])
             
-            # Affiliations
+            # Last corresponding author affiliation
+            last_corr_aff = article.get('last_corresponding_affiliation', '')
+            if last_corr_aff:
+                lines.append(f"**Last Corresponding Author Affiliation:** {last_corr_aff}")
+                lines.append("")
+            
+            # All affiliations (for reference)
             affiliations = article.get('affiliations', [])
             if affiliations:
                 if isinstance(affiliations, list):
                     aff_str = '; '.join(str(a) for a in affiliations)
                 else:
                     aff_str = str(affiliations)
-                lines.append(f"**Affiliation:** {aff_str}")
+                lines.append(f"**All Affiliations:** {aff_str}")
                 lines.append("")
             
             # Published date
@@ -351,18 +362,27 @@ def main():
     # Read configuration from environment variables (for GitHub Actions)
     keyword = os.getenv('SEARCH_KEYWORD', 'artificial intelligence')
     days = int(os.getenv('DAYS_BACK', '30'))
+    year_str = os.getenv('YEAR', '')
+    year = int(year_str) if year_str else None
     
-    logger.info(f"Starting harvest with keyword='{keyword}', days={days}")
+    logger.info(f"Starting harvest with keyword='{keyword}'")
+    if year:
+        logger.info(f"Filtering for year: {year}")
+    else:
+        logger.info(f"Days back: {days}")
     
     try:
-        harvester = MedRxivHarvester(keyword=keyword, days=days)
+        harvester = MedRxivHarvester(keyword=keyword, days=days, year=year)
         results = harvester.harvest()
         
         logger.info("=" * 80)
         logger.info("HARVEST SUMMARY")
         logger.info("=" * 80)
         logger.info(f"Search keyword: {keyword}")
-        logger.info(f"Days back: {days}")
+        if year:
+            logger.info(f"Year filter: {year}")
+        else:
+            logger.info(f"Days back: {days}")
         logger.info(f"Total articles: {results['statistics']['total_articles']}")
         logger.info(f"Source breakdown: {results['statistics']['source_breakdown']}")
         logger.info(f"Needs review: {results['statistics']['needs_manual_review']['count']}")

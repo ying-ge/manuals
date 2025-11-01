@@ -73,6 +73,7 @@ class GLMClient:
             'model': self.model_name,
             'messages': messages,
             'temperature': temperature,
+            'max_tokens': 3000,  # 增加token限制以支持更详细的中文内容
         }
         
         delay = initial_delay
@@ -135,13 +136,20 @@ class GLMClient:
         """
         if system_prompt is None:
             system_prompt = (
-                "You are a scientific assistant. Output STRICTLY a single JSON object with keys: "
-                "what_done, ai_role, models, data_sources, metrics. "
-                "Each value must be a short string (<=200 chars). "
-                "If a field cannot be found, set it to an empty string."
+                "你是一个科学文献分析助手。请从摘要中提取以下信息，并输出严格的一个JSON对象，包含以下键：\n"
+                "- what_done: 这篇论文做了什么（详细描述研究内容、研究方法、研究目标、实验设计、主要发现等，要求详细且完整，尽量包含研究的关键步骤和主要结果，字数控制在300-500字）\n"
+                "- ai_role: 用AI做了什么（AI在研究中扮演的角色、具体应用场景、如何使用AI解决问题等，要求详细说明AI的具体作用和应用方式，字数控制在200-300字）\n"
+                "- models: 用了哪个模型（模型名称、算法类型、架构等，用英文原名称）\n"
+                "- data_sources: 数据资源（数据集来源、数据规模、数据类型等，详细描述）\n"
+                "- metrics: 评估指标（可选，如果有的话）\n"
+                "重要要求：\n"
+                "1. what_done 和 ai_role 必须用中文回答，内容要详细和完整\n"
+                "2. models 和 data_sources 可以用英文（如果是专有名词），也可以中英结合\n"
+                "3. 所有内容要准确反映摘要中的信息，不要编造\n"
+                "4. 如果某个字段找不到，设置为空字符串"
             )
         
-        user_prompt = f'Abstract:\n"""\n{abstract}\n"""\n\nReturn only JSON.'
+        user_prompt = f'摘要：\n"""\n{abstract}\n"""\n\n请从上述摘要中提取信息，用中文详细描述研究内容和AI应用。只返回JSON对象，不要其他文字。'
         
         messages = [
             {'role': 'system', 'content': system_prompt},
@@ -220,7 +228,11 @@ class GLMClient:
             value = result.get(field, '')
             if not isinstance(value, str):
                 value = str(value) if value is not None else ''
-            # Truncate to max 400 chars (safety buffer over 200)
-            validated[field] = value[:400]
+            # Allow longer content for what_done and ai_role (up to 2000 chars)
+            if field in ['what_done', 'ai_role']:
+                validated[field] = value[:2000]
+            else:
+                # Other fields can be shorter
+                validated[field] = value[:500]
         
         return validated

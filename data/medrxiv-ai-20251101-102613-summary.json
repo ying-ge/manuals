@@ -1,0 +1,16 @@
+{
+  "total_articles": 124,
+  "source_breakdown": {
+    "pubmed": 99,
+    "arxiv": 25
+  },
+  "needs_manual_review": {
+    "count": 3,
+    "article_ids": [
+      "10.3390/medicina61101768",
+      "10.3390/tomography11100108",
+      "10.3390/ijms26199703"
+    ]
+  },
+  "execution_time": "2025-11-01T10:41:43.948673Z"
+}
