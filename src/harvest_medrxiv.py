@@ -265,17 +265,7 @@ class MedRxivHarvester:
             if last_corr_aff:
                 lines.append(f"**Last Corresponding Author Affiliation:** {last_corr_aff}")
                 lines.append("")
-            
-            # All affiliations (for reference)
-            affiliations = article.get('affiliations', [])
-            if affiliations:
-                if isinstance(affiliations, list):
-                    aff_str = '; '.join(str(a) for a in affiliations)
-                else:
-                    aff_str = str(affiliations)
-                lines.append(f"**All Affiliations:** {aff_str}")
-                lines.append("")
-            
+                      
             # Published date
             if article.get('published_at'):
                 lines.append(f"**Published:** {article.get('published_at')}")
@@ -305,17 +295,6 @@ class MedRxivHarvester:
                 f"**Metrics:** {article.get('metrics', 'N/A')}",
                 ""
             ])
-            
-            # Abstract excerpt
-            abstract = article.get('abstract', '')
-            if abstract:
-                excerpt = abstract[:300] + ('...' if len(abstract) > 300 else '')
-                lines.extend([
-                    "### Abstract (excerpt)",
-                    "",
-                    excerpt,
-                    ""
-                ])
             
             # Review flag
             if article.get('needs_manual_review'):
