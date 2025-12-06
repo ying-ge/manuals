@@ -242,47 +242,68 @@ class MedRxivHarvester:
     
     def _generate_markdown(self, articles: List[Dict]) -> str:
         """Generate Markdown report."""
+        # Count by source for statistics
+        source_counts = {}
+        for article in articles:
+            source = article.get('source', 'unknown')
+            source_counts[source] = source_counts.get(source, 0) + 1
+
         lines = [
-            "# medRxiv AI Articles Report",
+            "# AI Articles Report",
             "",
             f"**Generated:** {datetime.utcnow().isoformat()}Z",
-            f"**Total Articles:** {len(articles)}",
-            "",
+            f"**Total Articles:** {len(articles)}"
+        ]
+
+        # Add source statistics
+        for source, count in source_counts.items():
+            percentage = (count / len(articles)) * 100 if len(articles) > 0 else 0
+            lines.append(f"{source}: {count} ({percentage:.1f}%)")
+
+        lines.extend([
             "---",
             ""
-        ]
-        
+        ])
+
         for i, article in enumerate(articles, 1):
             lines.extend([
-                f"## {i}. {article.get('title', 'Untitled')}",
+                f"#### {i}. {article.get('title', 'Untitled')}.",
                 "",
                 f"**Last Corresponding Author:** {article.get('last_corresponding_author', article.get('corresponding_author', 'N/A'))}",
                 ""
             ])
-            
+
             # Last corresponding author affiliation
             last_corr_aff = article.get('last_corresponding_affiliation', '')
             if last_corr_aff:
-                lines.append(f"**Last Corresponding Author Affiliation:** {last_corr_aff}")
-                lines.append("")
-                      
+                lines.extend([
+                    f"**Last Corresponding Author Affiliation:** {last_corr_aff}",
+                    ""
+                ])
+
             # Published date
             if article.get('published_at'):
-                lines.append(f"**Published:** {article.get('published_at')}")
-                lines.append("")
-            
+                lines.extend([
+                    f"**Published:** {article.get('published_at')}",
+                    ""
+                ])
+
             # Link
             if article.get('url'):
-                lines.append(f"**URL:** {article.get('url')}")
-                lines.append("")
-            
+                lines.extend([
+                    f"**URL:** {article.get('url')}",
+                    ""
+                ])
+
             # Source
-            lines.append(f"**Source:** {article.get('source', 'unknown')}")
-            lines.append("")
-            
+            lines.extend([
+                f"**Source:** {article.get('source', 'unknown')}",
+                ""
+            ])
+
             # Extracted information
             lines.extend([
-                "### Extracted Information",
+                "##### Extracted Information",
                 "",
                 f"**What was done:** {article.get('what_done', 'N/A')}",
                 "",
@@ -293,21 +314,11 @@ class MedRxivHarvester:
                 f"**Data Sources:** {article.get('data_sources', 'N/A')}",
                 "",
                 f"**Metrics:** {article.get('metrics', 'N/A')}",
-                ""
-            ])
-            
-            # Review flag
-            if article.get('needs_manual_review'):
-                lines.extend([
-                    "⚠️ **Needs Manual Review**",
-                    ""
-                ])
-            
-            lines.extend([
+                "",
                 "---",
                 ""
             ])
-        
+
         return '\n'.join(lines)
     
     def _generate_statistics(
@@ -337,13 +348,25 @@ def main():
     """Main entry point."""
     # Ensure logs directory exists
     Path('logs').mkdir(exist_ok=True)
-    
+
     # Read configuration from environment variables (for GitHub Actions)
     keyword = os.getenv('SEARCH_KEYWORD', 'artificial intelligence')
-    days = int(os.getenv('DAYS_BACK', '30'))
+    days_str = os.getenv('DAYS_BACK', '30')
     year_str = os.getenv('YEAR', '')
     year = int(year_str) if year_str else None
-    
+
+    # Handle current_month parameter
+    if days_str.lower() == 'current_month':
+        # Calculate days from the beginning of current month
+        now = datetime.now()
+        # First day of current month
+        first_day_of_month = now.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+        # Days since first day of month
+        days = (now - first_day_of_month).days + 1  # +1 to include today
+        logger.info(f"Current month mode:检索当月文章 ({days}天)")
+    else:
+        days = int(days_str)
+
     logger.info(f"Starting harvest with keyword='{keyword}'")
     if year:
         logger.info(f"Filtering for year: {year}")

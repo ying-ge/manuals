@@ -2,8 +2,8 @@ name: Scrape medRxiv AI Articles
 
 on:
   schedule:
-    # Run weekly on Monday at 2 AM UTC
-    - cron: '0 17 * * 2' # 每周三 01:00 北京时间（UTC+8）
+    # Run monthly on the 7th at 2 AM UTC (10 AM Beijing time)
+    - cron: '0 2 7 * *' # 每月7日 10:00 北京时间（UTC+8）
   workflow_dispatch:  # Allow manual trigger for immediate runs
     inputs:
       search_keyword:
@@ -11,7 +11,7 @@ on:
         required: false
         default: 'artificial intelligence'
       days_back:
-        description: 'Days to look back (default: 30, use 365 for full 2025)'
+        description: 'Days to look back (default: current month only)'
         required: false
         default: '30'
 
@@ -42,7 +42,11 @@ jobs:
       - name: Create necessary directories
         run: |
           mkdir -p data logs .cache
-      
+
+      - name: Test GLM API Configuration
+        run: |
+          python test_github_actions.py
+
       - name: Run harvest script
         env:
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
@@ -65,20 +69,27 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           timestamp="${{ steps.timestamp.outputs.timestamp }}"
+          current_month=$(date -u +'%Y-%m')
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-      
-          git add data || true
-          git commit -m "Update data ($timestamp)" || echo "no changes to commit"
-          git push || echo "push failed"
 
-          # 如果没有变更则退出
+          git add data || true
+
+          # 检查是否有变更
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "No changes to commit for ${current_month}"
             exit 0
           fi
 
-          git commit -m "data: Add medRxiv AI articles harvest ${timestamp}"
+          git commit -m "Update data (${current_month}): Add medRxiv AI articles for ${current_month}
+
+📅 Monthly harvest: ${current_month}
+🤖 Generated with GLM-4.6 model
+🔄 Automated by GitHub Actions
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
 
           # 计算当前分支名并与远端同步（避免 non-fast-forward）
           BRANCH=${GITHUB_REF#refs/heads/}

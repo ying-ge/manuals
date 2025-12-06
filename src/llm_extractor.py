@@ -49,40 +49,48 @@ class LLMExtractor:
     def extract(self, abstract: str) -> Tuple[Dict[str, str], bool, Optional[str]]:
         """
         Extract structured information from abstract with fallback logic.
-        
+
         Args:
             abstract: The abstract text to analyze
-            
+
         Returns:
             Tuple of (extracted_data, needs_manual_review, raw_llm_output)
             - extracted_data: Dict with keys: what_done, ai_role, models, data_sources, metrics
             - needs_manual_review: Boolean indicating if manual review is needed
             - raw_llm_output: Raw LLM output if there was a parsing issue
         """
+        logger.info(f"Starting extraction for abstract of length: {len(abstract)}")
+
         # Try GLM first
         if self.glm_client:
             try:
+                logger.info("Attempting GLM extraction...")
                 result = self.glm_client.extract_structured_info(abstract)
-                logger.info("Successfully extracted using GLM")
+                logger.info("✅ Successfully extracted using GLM")
+                logger.debug(f"GLM result keys: {list(result.keys())}")
+                logger.debug(f"GLM what_done length: {len(result.get('what_done', ''))}")
                 return result, False, None
             except Exception as e:
-                logger.warning(f"GLM extraction failed: {e}, falling back to OpenAI")
-        
+                logger.warning(f"❌ GLM extraction failed: {e}, falling back to OpenAI")
+                logger.debug(f"GLM error details: {str(e)}", exc_info=True)
+
         # Try OpenAI as fallback
         if self.openai_client:
             try:
+                logger.info("Attempting OpenAI extraction...")
                 result, raw_output = self._extract_with_openai(abstract)
                 if result:
-                    logger.info("Successfully extracted using OpenAI")
+                    logger.info("✅ Successfully extracted using OpenAI")
                     return result, False, None
                 else:
-                    logger.warning("OpenAI extraction failed, falling back to heuristic")
+                    logger.warning("❌ OpenAI extraction failed, falling back to heuristic")
             except Exception as e:
-                logger.warning(f"OpenAI extraction failed: {e}, falling back to heuristic")
-        
+                logger.warning(f"❌ OpenAI extraction failed: {e}, falling back to heuristic")
+
         # Final fallback to heuristic
-        logger.info("Using heuristic extraction")
+        logger.warning("⚠️ Using heuristic extraction (lower quality)")
         result = self._heuristic_extract(abstract)
+        logger.info(f"Heuristic result: {result}")
         return result, True, None
     
     def _extract_with_openai(self, abstract: str) -> Tuple[Optional[Dict[str, str]], Optional[str]]:

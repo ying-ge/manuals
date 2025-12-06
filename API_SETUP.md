@@ -16,7 +16,7 @@ cp .env.example .env
 # GLM API密钥（推荐，支持中文提取）
 GLM_API_KEY=your_glm_api_key_here
 GLM_BASE_URL=https://open.bigmodel.cn/api/paas/v4
-GLM_MODEL_NAME=glm-4-flash
+GLM_MODEL_NAME=glm-4.6
 
 # OpenAI API密钥（可选，备用）
 OPENAI_API_KEY=your_openai_api_key_here

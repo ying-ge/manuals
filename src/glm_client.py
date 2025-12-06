@@ -29,13 +29,13 @@ class GLMClient:
         
         Args:
             api_key: GLM API key (defaults to GLM_API_KEY env var)
-            base_url: GLM API base URL (defaults to GLM_BASE_URL env var)
-            model_name: Model name (defaults to GLM_MODEL_NAME env var or 'glm-4-flash')
+            base_url: GLM API base URL (defaults to https://open.bigmodel.cn/api/paas/v4)
+            model_name: Model name (defaults to GLM_MODEL_NAME env var or 'glm-4.6')
             timeout: Request timeout in seconds
         """
         self.api_key = api_key or os.getenv('GLM_API_KEY')
         self.base_url = base_url or os.getenv('GLM_BASE_URL', 'https://open.bigmodel.cn/api/paas/v4')
-        self.model_name = model_name or os.getenv('GLM_MODEL_NAME', 'glm-4-flash')
+        self.model_name = model_name or os.getenv('GLM_MODEL_NAME', 'glm-4.6')
         self.timeout = timeout
         
         if not self.api_key:

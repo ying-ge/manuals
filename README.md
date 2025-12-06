@@ -59,7 +59,7 @@ Edit `.env`:
 # Required - GLM (BigModel GLM4.6) API
 GLM_API_KEY=your_glm_api_key_here
 GLM_BASE_URL=https://open.bigmodel.cn/api/paas/v4
-GLM_MODEL_NAME=glm-4-flash
+GLM_MODEL_NAME=glm-4.6
 
 # Optional - Fallback LLM
 OPENAI_API_KEY=your_openai_api_key_here
@@ -76,7 +76,7 @@ To enable automated daily harvesting:
 2. Add the following repository secrets:
    - `GLM_API_KEY` (required)
    - `GLM_BASE_URL` (optional, defaults to BigModel API)
-   - `GLM_MODEL_NAME` (optional, defaults to glm-4-flash)
+   - `GLM_MODEL_NAME` (optional, defaults to glm-4.6)
    - `OPENAI_API_KEY` (optional, for fallback)
    - `BIO_MODEL_API_KEY` (optional, for enhanced data fetching)
 
