@@ -4,31 +4,26 @@ on:
   workflow_dispatch:
     inputs:
       message:
-        description: 'Test message to display'
+        description: 'Test message'
         required: false
-        default: 'Hello GitHub Actions!'
+        default: 'Hello Actions!'
         type: string
+
+permissions:
+  contents: read
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Print test message
+      - name: Basic test
         run: |
-          echo "🧪 Manual trigger test successful!"
-          echo "📝 Message: ${{ github.event.inputs.message || 'No message provided' }}"
-          echo "🔑 Testing environment variables..."
-          echo "GLM_API_KEY present: ${{ secrets.GLM_API_KEY != '' }}"
-          echo "GLM_MODEL_NAME: ${{ secrets.GLM_MODEL_NAME || 'glm-4.6' }}"
+          echo "Manual trigger test!"
+          echo "Input message: ${{ github.event.inputs.message }}"
+          echo "Repository: ${{ github.repository }}"
+          echo "Branch: ${{ github.ref_name }}"
 
-      - name: Test GLM API (if API key is available)
-        if: secrets.GLM_API_KEY != ''
-        env:
-          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
-          GLM_BASE_URL: ${{ secrets.GLM_BASE_URL || 'https://open.bigmodel.cn/api/paas/v4' }}
-          GLM_MODEL_NAME: ${{ secrets.GLM_MODEL_NAME || 'glm-4.6' }}
+      - name: Check secrets
         run: |
-          python test_github_actions.py
+          echo "GLM_API_KEY exists: ${{ secrets.GLM_API_KEY != '' }}"
+          echo "Running on branch: ${{ github.ref_name }}"

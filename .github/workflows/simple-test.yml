@@ -1,0 +1,14 @@
+name: Simple Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "Hello World!"
+
+      - name: Show current time
+        run: date
