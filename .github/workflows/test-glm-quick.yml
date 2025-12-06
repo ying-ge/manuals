@@ -1,0 +1,106 @@
+name: Quick GLM Test
+
+on:
+  workflow_dispatch:
+    inputs:
+      days_back:
+        description: 'Days to look back for testing'
+        required: false
+        default: '3'
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  test-glm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Test GLM API Configuration
+        env:
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          GLM_BASE_URL: ${{ secrets.GLM_BASE_URL || 'https://open.bigmodel.cn/api/paas/v4' }}
+          GLM_MODEL_NAME: ${{ secrets.GLM_MODEL_NAME || 'glm-4.6' }}
+        run: |
+          echo "🔍 Testing GLM API Configuration..."
+          echo "API Key present: ${{ secrets.GLM_API_KEY != '' }}"
+          echo "Model: ${{ secrets.GLM_MODEL_NAME || 'glm-4.6' }}"
+
+          python << 'EOF'
+          import os
+          import json
+          import requests
+
+          api_key = os.getenv('GLM_API_KEY')
+          base_url = os.getenv('GLM_BASE_URL', 'https://open.bigmodel.cn/api/paas/v4')
+          model_name = os.getenv('GLM_MODEL_NAME', 'glm-4.6')
+
+          if not api_key:
+              print("❌ GLM_API_KEY not found")
+              exit(1)
+
+          print(f"✅ API Key found: {api_key[:8]}...{api_key[-4:]}")
+          print(f"🌐 Base URL: {base_url}")
+          print(f"🤖 Model: {model_name}")
+
+          # Test API call
+          url = f"{base_url}/chat/completions"
+          headers = {
+              'Authorization': f'Bearer {api_key}',
+              'Content-Type': 'application/json'
+          }
+
+          payload = {
+              'model': model_name,
+              'messages': [
+                  {'role': 'user', 'content': '请用中文回答：你好，GLM-4.6模型能做什么？'}
+              ],
+              'temperature': 0.0,
+              'max_tokens': 100
+          }
+
+          try:
+              print("📞 Making API call...")
+              response = requests.post(url, headers=headers, json=payload, timeout=10)
+              print(f"📊 Status code: {response.status_code}")
+
+              if response.status_code == 200:
+                  result = response.json()
+                  content = result.get('choices', [{}])[0].get('message', {}).get('content', '')
+                  print(f"✅ API call successful!")
+                  print(f"📝 Response: {content}")
+                  print("🎉 GLM-4.6 is working correctly!")
+              else:
+                  print(f"❌ API call failed: {response.status_code}")
+                  print(f"📄 Response: {response.text}")
+
+          except Exception as e:
+              print(f"❌ API call error: {e}")
+          EOF
+
+      - name: Test Small Harvest
+        if: secrets.GLM_API_KEY != ''
+        env:
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          GLM_BASE_URL: ${{ secrets.GLM_BASE_URL || 'https://open.bigmodel.cn/api/paas/v4' }}
+          GLM_MODEL_NAME: ${{ secrets.GLM_MODEL_NAME || 'glm-4.6' }}
+          SEARCH_KEYWORD: ${{ github.event.inputs.days_back || '3' }}
+          DAYS_BACK: ${{ github.event.inputs.days_back || '3' }}
+        run: |
+          echo "🧪 Running small harvest test..."
+          pip install feedparser beautifulsoup4 fuzzywuzzy
+
+          python src/harvest_medrxiv.py

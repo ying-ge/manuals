@@ -5,7 +5,9 @@
       "WebFetch(domain:docs.bigmodel.cn)",
       "Bash(python:*)",
       "Bash(python3:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

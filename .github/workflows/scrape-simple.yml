@@ -1,0 +1,77 @@
+name: Scrape medRxiv AI Articles (Simple)
+
+on:
+  workflow_dispatch:
+    inputs:
+      keyword:
+        description: 'Search keyword'
+        required: false
+        default: 'artificial intelligence'
+        type: string
+      days:
+        description: 'Days to look back'
+        required: false
+        default: '10'
+        type: string
+  schedule:
+    - cron: '0 2 7 * *'  # Monthly on the 7th at 2 AM UTC
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Create directories
+        run: |
+          mkdir -p data logs .cache
+
+      - name: Test GLM API
+        env:
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          GLM_BASE_URL: ${{ secrets.GLM_BASE_URL || 'https://open.bigmodel.cn/api/paas/v4' }}
+          GLM_MODEL_NAME: ${{ secrets.GLM_MODEL_NAME || 'glm-4.6' }}
+        run: |
+          echo "🔍 Testing GLM API..."
+          python test_github_actions.py
+
+      - name: Run harvest
+        if: success()
+        env:
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          GLM_BASE_URL: ${{ secrets.GLM_BASE_URL || 'https://open.bigmodel.cn/api/paas/v4' }}
+          GLM_MODEL_NAME: ${{ secrets.GLM_MODEL_NAME || 'glm-4.6' }}
+          SEARCH_KEYWORD: ${{ github.event.inputs.keyword || 'artificial intelligence' }}
+          DAYS_BACK: ${{ github.event.inputs.days || '10' }}
+        run: |
+          echo "🚀 Running harvest with GLM-4.6..."
+          python src/harvest_medrxiv.py
+
+      - name: Commit results
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data || true
+          git commit -m "Quick harvest test with GLM-4.6
+
+🤖 Generated with GLM-4.6 model
+🧪 Quick manual trigger test
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>" || echo "No changes to commit"
+          git push || echo "Push failed"
